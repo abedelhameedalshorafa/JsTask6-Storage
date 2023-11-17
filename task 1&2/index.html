@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>User Information Form</h2>
+        <form id="form">
+            <table>
+                <tr>
+                    <td><label for="name">1. Your Name:</label></td>
+                    <td><input type="text" id="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="age">2. Your Age:</label></td>
+                    <td><input type="number" id="age" required></td>
+                </tr>
+                <tr>
+                    <td>3. Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male" id="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" value="female" id="female" required>
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="description">4. Brief Description:</label></td>
+                    <td><textarea id="description" rows="4" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="major">5. Your Major and University:</label></td>
+                    <td><input type="text" id="major" required></td>
+                </tr>
+                <tr>
+                    <td>6. Programming Languages:</td>
+                    <td>
+                        <input type="checkbox" name="languages" value="javascript" id="js"> <label for="js">JavaScript</label>
+                        <input type="checkbox" name="languages" value="python" id="python"> <label for="python">Python</label>
+                        <input type="checkbox" name="languages" value="java" id="java"> <label for="java">Java</label>
+                        <!-- Add more programming languages as needed -->
+                    </td>
+                </tr>
+                <tr><td><button type="button" onclick="submitForm()">Submit</button></td></tr>
+            </table>
+        </form>
+        <div id="userCards"></div>
+    </div>
+
+    <div class="container">
+        <h2>Your Idea</h2>
+        <form id="form">
+            <table>
+                <tr>
+                    <td><label for="subject">1. Your subject:</label></td>
+                    <td><input type="text" id="subject" required></td>
+                </tr>
+                <tr>
+                    <td><label for="description">2. Brief Description:</label></td>
+                    <td><textarea id="description" rows="4" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="User Types">3. Your User Types:</label></td>
+                    <td><input type="number" id="User Types" required></td>
+                </tr>
+                <tr>
+                    <td><label for="Technology used">4. Your Technology used:</label></td>
+                    <td><input type="text" id="Technology used" required></td>
+                </tr>
+                <tr><td><button type="button" onclick="submitIdea()">Submit</button></td></tr>
+            </table>
+        </form>
+        <div id="userCards2"></div>
+    </div>
+
+
+    <script src="Js.js"></script>
+
+</body>
+</html>
